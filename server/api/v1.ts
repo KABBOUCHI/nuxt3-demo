@@ -1,5 +1,5 @@
 import express from 'express';
-
+import serverless from 'serverless-http';
 const app = express();
 
 app.use(express.json());
@@ -14,4 +14,4 @@ app.get('/hello', (req, res) => {
     });
 })
 
-export default app;
+export default serverless(app);
