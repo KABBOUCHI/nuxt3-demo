@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-const data = await $fetch('/api/hello')
+const data = await $fetch('/api/v1/hello')
 </script>
 
